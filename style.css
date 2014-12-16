@@ -1,0 +1,86 @@
+.bg {
+  background-image: url(img/labgfltr.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.ssn-icons {
+  float: right;
+  display: inline;
+}
+
+.logo {
+  background-image: url(img/jedi_vector.png);
+  background-size: 95px;
+  float: left;
+  margin: 20px;
+  width: 94px;
+  height: 85px;
+}
+
+
+.soundcloud {
+  background-image: url(img/ssnicons.svg);
+  background-size: 150px ;
+  background-position: 0px 0px;
+  float: right;
+  margin: 40px 5px 5px 5px;
+  width: 38px;
+  height: 40px;
+}
+
+.facebook {
+  background-image: url(img/ssnicons.svg);
+  background-size: 150px ;
+  background-position: 75px 0px;
+  float: right;
+  margin: 40px 5px 5px 5px;
+  width: 38px;
+  height: 40px;
+}
+
+.instagram {
+  background-image: url(img/ssnicons.svg);
+  background-size: 150px ;
+  background-position: 38px 0px;
+  float: right;
+  margin: 40px 5px 5px 5px;
+  width: 38px;
+  height: 40px;
+}
+
+.twitter {
+  background-image: url(img/ssnicons.svg);
+  background-size: 150px ;
+  background-position: 113px 0px;
+  float: right;
+  margin: 40px 50px 5px 5px;
+  width: 38px;
+  height: 40px;
+}
+
+.soundcloud:hover {
+  background-position: 0px -40px;
+}
+
+.facebook:hover {
+  background-position: 75px -40px;
+}
+
+.instagram:hover {
+  background-position: 38px -40px;
+}
+
+.twitter:hover {
+  background-position: 113px -40px;
+}
+
+@media (max-width: 700px) {
+  .bg {
+    background-image: url(img/jedi_responsive.png);
+  }
+}
+
+
+
