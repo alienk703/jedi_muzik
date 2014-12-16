@@ -80,6 +80,23 @@
   .bg {
     background-image: url(img/jedi_responsive.png);
   }
+
+  .soundcloud:hover {
+    background-position: 0px -81px;
+  }
+
+  .facebook:hover {
+    background-position: 75px -81px;
+  }
+
+  .instagram:hover {
+    background-position: 38px -81px;
+  }
+
+  .twitter:hover {
+    background-position: 113px -81px;
+  }
+
 }
 
 
