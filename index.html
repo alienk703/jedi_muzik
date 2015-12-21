@@ -3,25 +3,158 @@
   <title>JediMuzik</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://connect.soundcloud.com/sdk.js"></script>
+  <script type="text/javascript" src="js/soundmanager2.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+
+  <script src="audiojs/audio.min.js"></script>
+  <script>
+    audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+    });
+  </script>
 </head>
 <body>
-  <div class='bg'>
-    <div class='logo'></div>
-    <div class='ssn-icons'>
-      <a target='_blank' href='https://twitter.com/JediMuzik'>
-        <div class='twitter'></div>
-      </a>  
-      <a target='_blank' href='http://instagram.com/aowjedi/'>
-        <div class='instagram'></div>
-      </a> 
-      <a target='_blank' href='https://www.facebook.com/JediMuzik'>
-        <div class='facebook'></div>
-      </a>  
-      <a target='_blank' href='https://soundcloud.com/jedimuzik'>
-        <div class='soundcloud'></div>
-      </a>
+
+<link href='https://fonts.googleapis.com/css?family=Dosis:400,200,600' rel='stylesheet' type='text/css'>
+<!--   <div>
+    <section class="bg" >
+      <div id="bg1"></div>
+      <div id="bg2"></div>
+    </section>
+  </div>
+ -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 pad-0">
+     <section class="bg" >
+      <div id="bg1"></div>
+      <div id="bg2"></div>
+    </section>
     </div>
   </div>
+</div>
+
+<!-- <div class="container" style="background-color: #ffffff;">
+  <div class="row">
+    <div class="col-sm-12">
+     <iframe width="100%" height="500" scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_3535630?widget_id=55&pwc[song_ids]=24812834&context_type=song&spoid=artist_3434667&pwc[branded]=1" style="width:0px;min-width:100%;max-width:100%;"></iframe>
+    </div>
+  </div>
+</div>
+ -->
+<div class="container top-pad-50" style="background-color: #ffffff;">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 style="margin-top: 2px;">ABOUT</h2>
+      <p class="bio">
+      Hi, my name is Justin, aka <strong>JEDI</strong>. A music producer based out of Los Angeles, California. I'm not from here, I was raised in Virginia through elementary to highschool. In 2005 I visited Cali for 2 weeks. When I went back to VA I dropped out of college, packed my shit up and made the move out to west. I attended MI while interning for Artisans Music where I eventually became the head engineer/In-house producer. Through that experience I was fortunate to work with some of the biggest names in music such as <strong>E-40, Bobby Valentino, Talib Kweli, !llmind, Freddie Gibbs, Kurrupt, Alkaholiks,</strong> etc. Currently I am working on my own sound by combining elements of hip hop and electronic music together to create something fresh and new. My first song was premiered by <strong>DIPLO</strong> on his bbc1xtra <a href="http://www.bbc.co.uk/programmes/b03vpbtt" target="_blank"><strong>DIPLO and friends show</strong></a> and has been receiving continuous support by some of the biggest web-blogs on the planet. Please stay tuned for my upcoming releases and to everyone with a dream and that has listened to my music. THANK YOU!!
+      </p>
+    </div>
+    <div class="col-lg-6">
+     <img src="img/jedi_bio2.png" class="bio-img">
+    </div>
+  </div> 
+  
+  <div class="row sound-pad laser center-block">
+    <div class="col-md-3">
+      <img src="audio_bg/laser_single.png" class="album-art">
+    </div>
+    <div class="col-md-9">
+      <audio src="mp3/escaping_laser_jedi_original.mp3" preload="auto" ></audio>
+      <p class="song-title">Escaping Laser-JEDI (Original Mix)</p>
+    </div>
+  </div>
+
+  <div class="row sound-pad bunny center-block">
+    <div class="col-md-3">
+      <img src="audio_bg/bunny_single.png" class="album-art">
+    </div>
+    <div class="col-md-9">
+      <audio src="mp3/bye_bunny_shes_gone_jedi_orignal.mp3" preload="auto" ></audio>
+      <p class="song-title">Bye Bunny (She's Gone) ft. Sam Salter-JEDI (Original Mix)</p>
+    </div>
+  </div>
+
+  <div class="row sound-pad howdeep center-block">
+    <div class="col-md-3">
+      <img src="audio_bg/howdeep_single.png" class="album-art">
+    </div>
+    <div class="col-md-9">
+      <audio src="mp3/calvin_harris_howdeepisyourlove_jedi_remix.mp3" preload="auto" ></audio>
+      <p class="song-title">Calvin Harris-How Deep is Your Love (JEDI Remix)</p>
+    </div>
+  </div>
+
+  <div class="row sound-pad crazy center-block">
+    <div class="col-md-3">
+      <img src="audio_bg/crazy_single.png" class="album-art">
+    </div>
+    <div class="col-md-9">
+      <audio src="mp3/crazy_train_ozzy_osbourne_jedi_trap_remix.mp3" preload="auto" ></audio>
+      <p class="song-title">Ozzy Osbourne-Crazy Train (JEDI Trap Remix)</p>
+    </div>
+  </div>
+    <!-- <div class="col-lg-12">  
+      <iframe style="max-width: 700px;" class="center-block" width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236606077&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+    <div class="col-lg-12">  
+
+      <iframe style="max-width: 700px;" class="center-block" width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236776393&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+    <div class="col-lg-12">  
+      <iframe style="max-width: 700px;" class="center-block" width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236606420&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+    <div class="col-lg-12">  
+      <iframe style="max-width: 700px;" class="center-block" width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237080430&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div> -->
+  </div>
+</div>
+
+<div class="container-fluid">
+ <div class="row pad-bot black">
+    <div class="col-lg-12">
+      <h3 class="text-center white-txt">For all inquries <a href="mailto:jedi@artisansmusic.com">jedi@artisansmusic.com </a></h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="footer">
+  <div class="container">
+    <div class='logo'></div>
+      <div class='ssn-icons'>
+        <a target='_blank' href='https://twitter.com/JediMuzik'>
+          <div class='twitter'></div>
+        </a>  
+        <a target='_blank' href='http://instagram.com/aowjedi/'>
+          <div class='instagram'></div>
+        </a> 
+        <a target='_blank' href='https://www.facebook.com/JediMuzik'>
+          <div class='facebook'></div>
+        </a>  
+        <a target='_blank' href='https://soundcloud.com/darksidejedi'>
+          <div class='soundcloud'></div>
+        </a>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- 
+<input type="button" id="loadTracks" class="button big" value="Get hottest track" />
+<div id="track"></div> -->
 
 </body>
 </html>
