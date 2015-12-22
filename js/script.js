@@ -1,12 +1,32 @@
+// $("#audiojs_wrapper0").click(function () {
+//     $(".laser-art").toggleClass("laser-art");
+// });
 
-SC.initialize({
-  client_id: '176f804e94b2cfc28eb3beb1685af0d9'
+
+$("laser-art").click(function () {
+    $(this).toggleClass("bunny-art");
 });
 
-var track_url = 'https://soundcloud.com/jedimuzik/earth-wind-and-fire-brazilian-rhyme-jedi-zo-remix-freedownload';
-SC.oEmbed(track_url, { auto_play: true }, function(oEmbed) {
-  console.log('oEmbed response: ' + oEmbed);
-});
+console.log ("im here");
+
+$('.laser-art').hide();
+
+$('#audiojs_wrapper0').click(function() {
+    $('.laser-art').hide();
+    $('.laser-art[data-link=' + $(this).data('#audiojs_wrapper0') + ']').fadeIn({
+        width: '200px'
+    }, 300);
+});​
+
+
+// SC.initialize({
+//   client_id: '176f804e94b2cfc28eb3beb1685af0d9'
+// });
+
+// var track_url = 'https://soundcloud.com/jedimuzik/earth-wind-and-fire-brazilian-rhyme-jedi-zo-remix-freedownload';
+// SC.oEmbed(track_url, { auto_play: true }, function(oEmbed) {
+//   console.log('oEmbed response: ' + oEmbed);
+// });
 
 // SC.get("/groups/55517/tracks", {limit: 1}, function(tracks){
 //   alert("Latest track: " + tracks[0].title);

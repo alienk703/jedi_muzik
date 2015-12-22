@@ -40,8 +40,50 @@ section {
   padding: 30px;
   max-width: 800px;
 }
-.laser {
+.laser-art {
+  width: 150px;
+  height: 150px;
+  background: url(audio_bg/laser_single.png) no-repeat;
+  background-size: contain;
+}
+.bunny-art {
+  width: 150px;
+  height: 150px;
+  background: url(audio_bg/bunny_single.png) no-repeat;
+  background-size: contain;
+}
+.crazy-art {
+  width: 150px;
+  height: 150px;
+  background: url(audio_bg/crazy_single.png) no-repeat;
+  background-size: contain;
+}
+.howdeep-art {
+  width: 150px;
+  height: 150px;
+  background: url(audio_bg/howdeep_single.png) no-repeat;
+  background-size: contain;
+}
+.wildest-art {
+  width: 150px;
+  height: 150px;
+  background: url(audio_bg/wildest_single.jpg) no-repeat;
+  background-size: contain;
+}
+.cantfeel-art {
+  width: 150px;
+  height: 150px;
+  background: url(audio_bg/cantfeel_single.jpg) no-repeat;
+  background-size: contain;
+}
+.cantfeel {
+  background: url(audio_bg/cantfeel_cover.jpg) no-repeat;
+}
+.wildest{
   margin-top: 100px;
+  background: url(audio_bg/wildest_cover.jpg) no-repeat;
+}
+.laser {
   background: url(audio_bg/laser_cover.jpg) no-repeat;
 }
 .bunny {
@@ -68,7 +110,7 @@ section {
   background-position: center center;
 }
 #bg1 {
-  background-image: url(img/bg-over_2.png);
+  background-image: url(img/bg-over_2.jpg);
   animation: zoomin 60s linear infinite;
   background-size: cover;
   width: 100%;
@@ -76,7 +118,7 @@ section {
 }
 
 #bg2 {
-  background-image: url(img/mainbg2015_3.png);
+  background-image: url(img/mainbg2015_3.jpg);
   mix-blend-mode: screen;
   background-size: cover;
   width: 100%;
